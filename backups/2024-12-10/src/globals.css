@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 4rem;
+  }
+}
+
+/* Carousel Styling */
+.features-slider {
+  margin: 0 -1rem;
+}
+
+.features-slider .slick-slide {
+  padding: 1rem;
+}
+
+.features-slider .slick-dots li button:before {
+  color: #3B82F6;
+  opacity: 0.25;
+}
+
+.features-slider .slick-dots li.slick-active button:before {
+  color: #3B82F6;
+  opacity: 0.75;
+}
+
+.features-slider .slick-prev:before,
+.features-slider .slick-next:before {
+  color: #3B82F6;
+}
+
+.features-slider .slick-prev {
+  left: -2rem;
+}
+
+.features-slider .slick-next {
+  right: -2rem;
+}
